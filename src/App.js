@@ -1,6 +1,5 @@
 //fetch data from api in react
 
-
 import React, { useEffect, useState } from 'react';
 
 const App = () => {
@@ -26,7 +25,7 @@ const App = () => {
         <ul>
           {users.map((user) => (
             <li key={user.id}>
-              {user.title}-{user.price}-{user.description}
+              {user.title}-{user.price}-<strong>{user.description}</strong>
             </li>
           ))}
         </ul>
